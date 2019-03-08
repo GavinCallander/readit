@@ -1,0 +1,20 @@
+<div class="list">
+    <% articles.forEach(function(article) { %>
+        <div class="listItems">
+        <div class="listImg">
+            <img class = "img" src="<%= article.urlToImage %>">
+        </div>
+        <div class="listInfo">
+            <p>Title: <%= article.title %></p>
+            <p>Author: <%= article.author %></p>
+            <p>Description: <%= article.description %> <br/></p>
+            <div class="options">
+                <a class="read" href="<%= article.url %>">Read now...</a>
+                <form method="POST" action="/list/<%= article.id %>?_method=DELETE">
+                    <button type="submit">ReadIt? Delete it</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <% }) %>
+</div>
