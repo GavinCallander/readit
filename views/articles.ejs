@@ -1,17 +1,19 @@
 <div class="articles">
     <% news.articles.forEach(function(article) { %>
         <section class="item" style="background-image:url(<%= article.urlToImage %>)">
-            <h5><%= article.title %></h5>
-            <p><%= article.source.name %></p>
-            <a href=<%= article.url %>>Read Now</a>
-            <form method="POST" action="/list">
-                <input type="hidden" name="title" value="<%= article.title %>">
-                <input type="hidden" name="author" value="<%= article.author %>">
-                <input type="hidden" name="description" value="<%= article.description %>">
-                <input type="hidden" name="url" value="<%= article.url %>">
-                <input type="hidden" name="urlToImage" value="<%= article.urlToImage %>">
-                <button type="submit">Read Later</button>
-            </form>
+            <div class="contents">
+                <h5><%= article.title %></h5>
+                <p><%= article.source.name %></p>
+                <a href=<%= article.url %>>Read Now</a>
+                <form method="POST" action="/list">
+                    <input type="hidden" name="title" value="<%= article.title %>">
+                    <input type="hidden" name="author" value="<%= article.author %>">
+                    <input type="hidden" name="description" value="<%= article.description %>">
+                    <input type="hidden" name="url" value="<%= article.url %>">
+                    <input type="hidden" name="urlToImage" value="<%= article.urlToImage %>">
+                    <button type="submit">Read Later</button>
+                </form>
+            </div>
         </section>
 
         <section id="start" class="modal">

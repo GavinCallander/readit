@@ -5,7 +5,8 @@ html, body {
 
 body {
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.1);
+    font-family: "Old Standard TT", "serif";
 }
 
 header {
@@ -39,6 +40,10 @@ a {
     font-size: 1.5em;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -46,21 +51,25 @@ a {
     height: 80vh;
     width: 80vw;
     margin: .5em 9em;
-    border: 1px solid black;
 }
 
 .link {
-    height: 80%;
+    height: 40%;
     width: 45%;
     text-align: center;
-    vertical-align: middle;
-    border: 1px solid black;
     margin: 4em 2em;
+    padding-top: 5em;
+    font-size: 2em;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.link:hover {
+    border: 1px solid black;
 }
 
 .articles {
     display: flex;
-    height: 170vh;
+    height: 230vh;
     width: 82vw;
     margin: 0 5em;
     flex-direction: column;
@@ -73,7 +82,7 @@ a {
 
 .item {
     width: 14vw;
-    height: 37vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -81,7 +90,19 @@ a {
     background-size: 28vh;
     background-size: cover;
     margin: 1em;
-    color: yellow; 
+    color: white;
+}
+
+.content {
+    height: 70%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.contents {
+    height: 70%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .list {
@@ -136,6 +157,35 @@ a {
     border: 1px solid black;
 }
 
-button {
+.data {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5em 20em;
+}
 
+.nameForm {
+    height: 10vh;
+    width: 25vw;
+    font-size: 1.5em;
+}
+
+.name {
+    height: 5vh;
+    width: 25vw;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.form-group {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5em 20em;
 }

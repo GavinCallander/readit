@@ -59,6 +59,18 @@ app.get('/profile', isLoggedIn, function(req, res) {
   res.render('profile');
 });
 
+app.get('/preferences', isLoggedIn, function(req, res) {
+  res.render('preferences');
+});
+
+app.get('/explore', function(req, res) {
+  var newsUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=64e994e4023c47fe955340cf8c870b1a'
+  request(newsUrl, function(error, response, body) {
+    var news = JSON.parse(body);
+    res.render('explore', {news});
+  });
+});
+
 app.get('/articles', isLoggedIn, function(req, res) {
   var newsUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=64e994e4023c47fe955340cf8c870b1a'
   request(newsUrl, function(error, response, body) {

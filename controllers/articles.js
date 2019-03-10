@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
     .then(function(user) {
         user.getArticles()
         .then(function(articles) {
-            res.render('list', {user,articles})
+            res.render('list', {user, articles})
         });
     });
 });
