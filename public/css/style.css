@@ -14,7 +14,6 @@ header {
     color: white;
     margin-bottom: 0;
     height: 4em;
-    margin-top: -2.6em;
     vertical-align: middle;
     top: 0;
 }
@@ -121,7 +120,7 @@ a:hover {
 
 .listItems {
     display: flex;
-    height: 13%;
+    height: 16%;
     width: 95%;
     margin: 1em;
     padding: .5em;
@@ -188,4 +187,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: .5em 20em;
+}
+
+.welcome {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: -3em;
 }
