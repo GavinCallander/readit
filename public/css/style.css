@@ -68,7 +68,7 @@ a:hover {
 
 .articles {
     display: flex;
-    height: 230vh;
+    height: 240vh;
     width: 82vw;
     margin: 0 5em;
     flex-direction: column;
@@ -187,10 +187,4 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: .5em 20em;
-}
-
-.welcome {
-    text-align: left;
-    font-size: 2em;
-    margin-bottom: -3em;
 }
