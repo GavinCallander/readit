@@ -175,16 +175,17 @@ a:hover {
 .name {
     height: 5vh;
     width: 25vw;
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 1em 0;
 }
 
 .form-group {
-    height: 50vh;
-    width: 50vw;
+    height: 10vh;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: .5em 20em;
+    vertical-align: top;
+    margin: 3em 18em;
+    font-size: 2em;
 }
