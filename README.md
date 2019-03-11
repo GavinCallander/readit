@@ -28,7 +28,7 @@ Express authentication template using Passport + flash messages + custom middlew
 
 # ReadIt
 # Overview
--   ReadIt is a full-stack news app, bringing you headlines from the US', and the world's, biggest stories.  The build was primarily conducted using Express and Node.js.
+-   ReadIt is a full-stack news app, bringing you headlines from the US', and the world's, biggest stories.  The build was primarily conducted using Express, with use of other languages used throughout.
 
 # Development
 -   As is often the case for me, ReadIt began as something completely different.  Developed for an assignment, the parameters which required to be met stated a full-stack app, which called upon an API and had full CRUD routes was to be built.  Initially, I began working on a different app, and then another, before finally setting my sights on ReadIt as a feasible idea.
